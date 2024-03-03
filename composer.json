@@ -1,0 +1,22 @@
+{
+    "name": "nickp/kouintabooks",
+    "authors": [
+        {
+            "name": "NIKOLAOS PSALTAKHS",
+            "email": "nickpsal@hotmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.0"
+    },
+    "autoload": {
+        "classmap": [
+            "app/Core",
+            "app/Models"            
+        ],
+        "files": [
+            "app/Core/config.php",
+            "app/Core/functions.php"
+        ]
+    }
+}

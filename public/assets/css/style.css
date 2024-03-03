@@ -1,0 +1,17 @@
+.searchLabel {
+    padding-left: 15px;
+}
+
+.searchInput {
+    width: 500px;
+}
+
+.error{
+	display: inline-block;
+	width: 640px;
+	background-color: gray;
+	color: white;
+	margin: 0px 0px 4px 20px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
