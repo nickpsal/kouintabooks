@@ -14,6 +14,7 @@
 		<input class="searchInput" type="text" id="search" placeholder="Type to search...">
     	<button type="button" class="btn btn-primary" onclick="searchTable()">Search</button>
 		<a href="<?=URL?>home/add" class="btn btn-primary" type="button">Add New</a>
+		<a href="<?=URL?>home/exporttopdf" class="btn btn-primary" type="button">Export to PDF</a>
 		<table id="myTable" class="table table-striped">
 			<thead>
 				<tr>
