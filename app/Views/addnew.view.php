@@ -12,7 +12,7 @@
                     </div>
                     <div class="form-group">
                         <label for="title">Τίτλος:</label>
-                        <input type="text" class="form-control" name="title" value="" placeholder="Τίτλος Βιβλίου" required />
+                        <input type="text" class="form-control" name="title" placeholder="Τίτλος Βιβλίου" required />
                     </div>
                     <div class="form-group">
                         <label for="publisher">Συγγραφέας:</label>

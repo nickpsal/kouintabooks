@@ -17,8 +17,8 @@
                 $data['title'] = 'Εισαγωγή Νέου Βιβλιου';
                 $this->view('addnew', $data);
             }else {
-                $data['title'] = $_POST['title'];
-                $data['publisher'] = $_POST['publisher'];
+                $data['Title'] = $_POST['title'];
+                $data['PublisherName'] = $_POST['publisher'];
                 $data['Year'] = $_POST['Year'];
                 $data['ISBN'] = $_POST['ISBN'];
                 $data['Price'] = $_POST['Price'];
@@ -36,11 +36,10 @@
                 $query['id'] = $_GET['id'];
                 $data['data'] = $book->get_first_query_db($query);
                 $data['title'] = 'Αλλαγή Στοιχείων Βιβλίου';
-                show($data); die();
                 $this->view('update', $data);
             }else {
-                $data['title'] = $_POST['title'];
-                $data['publisher'] = $_POST['publisher'];
+                $data['Title'] = $_POST['title'];
+                $data['PublisherName'] = $_POST['publisher'];
                 $data['Year'] = $_POST['Year'];
                 $data['ISBN'] = $_POST['ISBN'];
                 $data['Price'] = $_POST['Price'];
@@ -55,5 +54,6 @@
             $id = $_GET['id'];
             $book = new Book();
             $book->delete_data_from_db($id);
+            redirect('home');
         }
     }
